@@ -1,1 +1,19 @@
-# SJTU-NLP-Assignment-LLM-Efficient-Inference-
+# LLM-Efficient-Inference
+
+## 1. 实验环境
+- 模型: Pythia-70M
+- 设备: i7-12700h
+
+## 2. Baseline 结果 (未优化)
+在不使用任何加速技术的情况下，模型的原始表现如下：
+
+| 指标 | 测试结果 |
+| :--- | :--- |
+| **Wikitext PPL (困惑度)** | 40.73 |
+| **首字延迟 (TTFT)** | 0.0210 s |
+| **单 token 耗时 (TPOT)** | 0.0084 s |
+
+## 3. 优化结果 (待补充)
+| 优化方法 | PPL | TTFT | TPOT | 加速比 |
+| :--- | :--- | :--- | :--- | :--- |
+| Baseline | 40.73 | 0.0210 s | 0.0084 s | 1.0x |
